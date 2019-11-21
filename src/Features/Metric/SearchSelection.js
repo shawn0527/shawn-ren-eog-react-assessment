@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import * as actions from "./actions";
+import * as actions from './actions';
 import { Provider, createClient, useQuery } from "urql";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { Dropdown } from "semantic-ui-react";

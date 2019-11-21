@@ -72,7 +72,7 @@ export default props => {
 const Plot = () => {
   const [heartBeatRes] = useQuery({query:hquery})
   const loadTime = heartBeatRes.data?heartBeatRes.data.heartBeat:null
-  const selectedMetrics = useSelector(state=>state.metric.selectedMetrics)
+  const selectedMetrics = useSelector(state => state.metric.selectedMetrics)
   const historical = 30 * 60 * 1000;
   const allPlotsObj = {}
   const dispatch = useDispatch()

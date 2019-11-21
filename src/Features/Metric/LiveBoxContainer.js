@@ -6,6 +6,8 @@ const LiveBoxContainer = () => {
   const selectedMetrics = useSelector(state => state.metric.selectedMetrics);
   const livePlots = useSelector(state => state.metric.livePlots);
   const liveBoxes = [];
+
+  if(!selectedMetrics) return;
   for (let i = 0; i < selectedMetrics.length; i++) {
     const metricName = selectedMetrics[i];
     const liveData = livePlots[metricName];
