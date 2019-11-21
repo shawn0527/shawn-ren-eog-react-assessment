@@ -4,8 +4,8 @@ import * as actions from "./actions";
 import { Provider, createClient, useQuery } from "urql";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { Dropdown } from "semantic-ui-react";
-// import LiveBoxContainer from "./LiveBoxContainer";
-// import PlotContainer from "./PlotContainer";
+import LiveBoxContainer from "./LiveBoxContainer";
+import PlotContainer from "./PlotContainer";
 
 const client = createClient({
   url: "https://react.eogresources.com/graphql"
@@ -87,8 +87,8 @@ const SearchSelection = () => {
         options={options}
         onChange={handleChange}
       />
-      {/* <LiveBoxContainer />
-      <PlotContainer /> */}
+      <LiveBoxContainer />
+      <PlotContainer />
     </div>
   );
 };
